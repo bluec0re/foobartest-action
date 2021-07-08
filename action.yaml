@@ -1,0 +1,14 @@
+name: foobar
+description: testtest
+inputs:
+  foo:
+    description: foo
+    required: false
+    default: "${{secrets}}"
+  bar:
+    description: bar
+    required: false
+
+runs:
+  using: 'node12'
+  main: main.js
